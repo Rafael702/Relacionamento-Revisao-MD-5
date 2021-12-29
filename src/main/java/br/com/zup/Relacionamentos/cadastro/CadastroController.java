@@ -17,19 +17,19 @@ public class CadastroController {
     private ModelMapper modelMapper;
 
     @PostMapping()
-    public Cadastro cadastrar(@RequestBody @Valid CadastroEntradaDTO cadastroEntradaDTO){
+    public Cadastro cadastrar(@RequestBody @Valid CadastroEntradaDTO cadastroEntradaDTO) {
         Cadastro cadastro = modelMapper.map(cadastroEntradaDTO, Cadastro.class);
-        return cadastroService.salvarNovoCadastroComEndereco(cadastro);
+        return cadastroService.salvarCadastro(cadastro);
     }
 
     @GetMapping("/{id}")
-    public Cadastro exibirCadastro(@PathVariable String id){
+    public Cadastro exibirCadastro(@PathVariable String id) {
         return cadastroService.buscarPorId(id);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deletarCadastro(@PathVariable String id){
+    public void deletarCadastro(@PathVariable String id) {
         cadastroService.deletarCadastro(id);
     }
 }

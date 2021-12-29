@@ -23,11 +23,6 @@ public class CadastroService {
         return cadastroRepository.save(cadastro);
     }
 
-    public Cadastro salvarNovoCadastroComEndereco(Cadastro cadastro) {
-        enderecoService.salvarTodosEnderecos(cadastro.getEnderecos());
-        return salvarCadastro(cadastro);
-    }
-
     public Cadastro buscarPorId(String id) {
         Optional<Cadastro> optionalCadastro = cadastroRepository.findById(id);
         if (optionalCadastro.isEmpty()) {
