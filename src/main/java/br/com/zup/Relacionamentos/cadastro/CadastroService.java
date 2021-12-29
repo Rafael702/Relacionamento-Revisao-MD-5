@@ -37,4 +37,7 @@ public class CadastroService {
         return optionalCadastro.get();
     }
 
+    public void deletarCadastro(String cpf){
+        cadastroRepository.deleteById(cpf);
+    }
 }
