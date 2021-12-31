@@ -21,6 +21,9 @@ public class Turma {
     @ManyToMany
     private List<Cadastro> alunos;
 
+    public Turma() {
+    }
+
     public int getId() {
         return id;
     }

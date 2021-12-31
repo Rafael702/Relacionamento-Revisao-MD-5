@@ -3,7 +3,6 @@ package br.com.zup.Relacionamentos.turma;
 import br.com.zup.Relacionamentos.turma.dtos.MatriculaDTO;
 import br.com.zup.Relacionamentos.turma.dtos.TurmaDetailsDTO;
 import br.com.zup.Relacionamentos.turma.dtos.TurmaEntradaDTO;
-import br.com.zup.Relacionamentos.turma.dtos.TurmaResumoDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -5,10 +5,12 @@ import br.com.zup.Relacionamentos.endereco.Endereco;
 import br.com.zup.Relacionamentos.turma.Turma;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
-@Table(name = "pessoa")
+@Table(name = "pessoas")
 public class Cadastro {
     @Id
     private String cpf;
