@@ -1,6 +1,7 @@
 package br.com.zup.Relacionamentos.cadastro.dtos;
 
 
+import br.com.zup.Relacionamentos.curso.dtos.CursoIdDTO;
 import br.com.zup.Relacionamentos.endereco.dtos.EnderecoEntradaDTO;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -19,6 +20,7 @@ public class CadastroEntradaDTO {
     @Email
     @NotBlank
     private String email;
+    private List<CursoIdDTO> cursos;
 
     //TEMOS VALIDAÇÕES PARA SEREM FEITAS NA ENDERECOENTRADADTO, PORTANTO, COLOCAREMOS UM @VALID
     //PARA QUE O SPRING FAÇA ESTA VALIDAÇÃO, POIS ESTAMOS TENDO UMA COMPOSIÇÃO
@@ -35,6 +37,14 @@ public class CadastroEntradaDTO {
 
     public void setEnderecos(List<EnderecoEntradaDTO> enderecos) {
         this.enderecos = enderecos;
+    }
+
+    public List<CursoIdDTO> getCursos() {
+        return cursos;
+    }
+
+    public void setCursos(List<CursoIdDTO> cursos) {
+        this.cursos = cursos;
     }
 
     public String getCpf() {
@@ -60,4 +70,5 @@ public class CadastroEntradaDTO {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }

@@ -1,6 +1,8 @@
 package br.com.zup.Relacionamentos.cadastro;
 
+import br.com.zup.Relacionamentos.curso.Curso;
 import br.com.zup.Relacionamentos.endereco.Endereco;
+import br.com.zup.Relacionamentos.turma.Turma;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,7 +18,18 @@ public class Cadastro {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Endereco> enderecos;
 
+    @ManyToMany(mappedBy = "alunos")
+    private List<Turma> turmas;
+
     public Cadastro() {
+    }
+
+    public List<Turma> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(List<Turma> turmas) {
+        this.turmas = turmas;
     }
 
     public List<Endereco> getEnderecos() {
@@ -50,4 +63,5 @@ public class Cadastro {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
