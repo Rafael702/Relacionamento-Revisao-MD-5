@@ -166,3 +166,5 @@ Problema com JSON infinito:
 - Através do RM ou do código de registro de Matricula, podemos obter os
 dados do aluno cadastrado, a turma em que ele está matriculado e o/os cursos
 em que ele está estudando.
+
+*USAR URI*
