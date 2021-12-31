@@ -156,4 +156,13 @@ Periodo enum;
 
 OBS:
 Problema com JSON infinito: 
-# RESOLVIDO
+*RESOLVIDO*✅ 
+
+# Incluir Validações:
+- O Aluno não pode ser matricular em uma turma em que ele já está matriculado.
+
+# Extra
+- Todo aluno pode ter um código de registro ou RM de Matricula. 
+- Através do RM ou do código de registro de Matricula, podemos obter os
+dados do aluno cadastrado, a turma em que ele está matriculado e o/os cursos
+em que ele está estudando.
