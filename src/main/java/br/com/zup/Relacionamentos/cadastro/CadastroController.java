@@ -25,6 +25,7 @@ public class CadastroController {
     }
 
     @GetMapping("/{id}")
+
     public CadastroDetailDTO exibirCadastro(@PathVariable String id) {
         Cadastro cadastro = cadastroService.buscarPorId(id);
         return modelMapper.map(cadastro, CadastroDetailDTO.class);

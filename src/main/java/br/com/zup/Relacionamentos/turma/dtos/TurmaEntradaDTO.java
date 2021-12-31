@@ -1,7 +1,7 @@
 package br.com.zup.Relacionamentos.turma.dtos;
 
 import br.com.zup.Relacionamentos.curso.dtos.CursoIdDTO;
-import br.com.zup.Relacionamentos.turma.enums.Periodo;
+import br.com.zup.Relacionamentos.turma.enuns.Periodo;
 
 public class TurmaEntradaDTO {
     private Periodo periodo;

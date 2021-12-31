@@ -2,7 +2,7 @@ package br.com.zup.Relacionamentos.turma.dtos;
 
 import br.com.zup.Relacionamentos.cadastro.dtos.CadastroResumoDTO;
 import br.com.zup.Relacionamentos.curso.Curso;
-import br.com.zup.Relacionamentos.turma.enums.Periodo;
+import br.com.zup.Relacionamentos.turma.enuns.Periodo;
 
 import java.util.List;
 

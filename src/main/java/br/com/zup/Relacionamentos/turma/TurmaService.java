@@ -2,7 +2,7 @@ package br.com.zup.Relacionamentos.turma;
 
 import br.com.zup.Relacionamentos.cadastro.Cadastro;
 import br.com.zup.Relacionamentos.cadastro.CadastroService;
-import br.com.zup.Relacionamentos.turma.custom_exception.TurmaNaoEncontrada;
+import br.com.zup.Relacionamentos.turma.custom_exceptions.TurmaNaoEncontrada;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

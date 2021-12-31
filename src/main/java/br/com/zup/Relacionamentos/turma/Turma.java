@@ -2,7 +2,7 @@ package br.com.zup.Relacionamentos.turma;
 
 import br.com.zup.Relacionamentos.cadastro.Cadastro;
 import br.com.zup.Relacionamentos.curso.Curso;
-import br.com.zup.Relacionamentos.turma.enums.Periodo;
+import br.com.zup.Relacionamentos.turma.enuns.Periodo;
 
 import javax.persistence.*;
 import java.util.List;
