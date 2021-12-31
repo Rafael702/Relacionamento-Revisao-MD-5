@@ -160,6 +160,7 @@ Problema com JSON infinito:
 
 # Incluir Validações:
 - O Aluno não pode ser matricular em uma turma em que ele já está matriculado.
+- Ao salvar a Turma o nome do curso não deve aparecer com valor 'null'.
 
 # Extra
 - Todo aluno pode ter um código de registro ou RM de Matricula. 
