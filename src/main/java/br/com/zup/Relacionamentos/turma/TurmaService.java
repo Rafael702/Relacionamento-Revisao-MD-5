@@ -30,6 +30,6 @@ public class TurmaService {
 
         turmaOptional.get().getAlunos().add(cadastro);
         return turmaRepository.save(turmaOptional.get());
-    }
 
+    }
 }

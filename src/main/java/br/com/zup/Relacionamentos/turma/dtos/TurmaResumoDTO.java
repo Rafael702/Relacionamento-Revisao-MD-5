@@ -3,6 +3,7 @@ package br.com.zup.Relacionamentos.turma.dtos;
 import br.com.zup.Relacionamentos.curso.Curso;
 import br.com.zup.Relacionamentos.turma.enums.Periodo;
 
+
 public class TurmaResumoDTO {
     private int id;
     private Periodo periodo;
