@@ -1,8 +1,12 @@
 # Relacionamento-Revisao-MD-5
 Revisão do Exercicio de Relacionamento do Módulo 5 dia  16/11-17/11/2021
 
-----------------------------------------------------------------------------
-Nesse projeto criamos exemplos de utilização de relacionamentos e mapeamento utilizando o
+
+# Relacionamentos
+
+------
+
+Nesse projeto criamos exemplos de utilização de relacionamentos e mapeamento utilizando o 
 ORM. Vimos quais os problemas os relacionamentos podem trazer e como resolver ele utilizando;
 1. Cascade
 2. DTOs
@@ -32,6 +36,8 @@ utilizando DTOs
           "complemento": null,
           "cep": "01928"
         }
+      ]
+    }
       ],
       "turmas": [
         {
@@ -40,22 +46,26 @@ utilizando DTOs
           "curso": {
             "id": 1,
             "nome": "ADS"
-          },
-          "alunos": [
+          }
+        }
+      ],
+      "alunos": [
+        {
+          "cpf": "446.628.670-10",
+          "nome": "Xablauso",
+          "email": "xablauso2@xablausando.com",
+          "enderecos": [
             {
-              "cpf": "446.628.670-10",
-              "nome": "Xablauso",
-              "email": "xablauso2@xablausando.com",
-              "enderecos": [
-                {
-                  "id": 2,
-                  "logradouro": "Rua Muito louca",
-                  "numero": "765",
-                  "complemento": null,
-                  "cep": "01928"
-                }
-              ],
-              "turmas":...
+              "id": 2,
+              "logradouro": "Rua Muito louca",
+              "numero": "765",
+              "complemento": null,
+              "cep": "01928"
+            }
+          ]
+        }
+      ]
+    }
 ```
 
 -----
@@ -153,7 +163,6 @@ Periodo enum;
 - Matrícula um cadastro como aluno de uma turma.
 
 ----
-
 OBS:
 Problema com JSON infinito: 
 *RESOLVIDO*✅ 
@@ -168,4 +177,6 @@ Problema com JSON infinito:
 dados do aluno cadastrado, a turma em que ele está matriculado e o/os cursos
 em que ele está estudando.
 
-*USAR URI*
+>*USAR URI*
+
+
